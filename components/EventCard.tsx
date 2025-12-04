@@ -16,6 +16,7 @@ const EventCard = ({ title, image }: Props) => {
         height={300}
         className="poster"
       />
+      {title}
     </Link>
   );
 };

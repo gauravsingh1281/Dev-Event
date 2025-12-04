@@ -20,7 +20,9 @@ const Page = () => {
         <h3>Featured Events</h3>
         <ul className="events">
           {events.map((event) => (
-            <EventCard image={event.image} title={event.title} />
+            <li key={event.title}>
+              <EventCard {...event} />
+            </li>
           ))}
         </ul>
       </div>
